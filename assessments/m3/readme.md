@@ -6,13 +6,12 @@
  - Sub-segment: const/rodata
  - Permissions: Read
  - Lifetime: Indefinite
-How answer is derived:
-```
-Run `make build PLATFORM=HOST`
-Look at `c1m3.map` and look for `g2` for Segment and Sub-segment
-Look at `msp432p401r.lds` for Permissions
-Look at main.c for Lifetime
-```
+
+How answer is derived:  
+ - Run `make build PLATFORM=HOST`
+ - Look at `c1m3.map` and look for `g2` for Segment and Sub-segment
+ - Look at `msp432p401r.lds` for Permissions
+ - Look at main.c for Lifetime
 
 ### Question 2
 *g4*  
