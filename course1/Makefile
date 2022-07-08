@@ -42,7 +42,7 @@ CC = arm-none-eabi-gcc
 CPU = cortex-m4
 ARCH = armv7e-m
 SPECS = nosys.specs
-LINKER_FILE = ../msp432p401r.lds
+LINKER_FILE = msp432p401r.lds
 LDFLAGS = -Wl,-Map=$(TARGET).map -T $(LINKER_FILE)
 CFLAGS = -mcpu=$(CPU) -march=$(ARCH) --specs=$(SPECS) -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16
 SOURCES = $(COMMON_SOURCES) $(MSP432_SOURCES)
